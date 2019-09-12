@@ -1,0 +1,80 @@
+ .navbar-brand img {
+    height: 30px;
+ }
+
+ .grad {
+    background-color: #4A90E2; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #4A90E2 , #80C3F3);
+ }
+
+ .plus-icon {
+    color: #4A90E2;
+ }
+
+ .plus-icon:hover{
+    background-color:green;
+ }
+
+ .trash-icon:hover{
+    background-color:red;
+ }
+
+ .text-button {
+    display: none;
+   }
+
+ .image-height {
+    height: 75px;
+    width: 80px;
+    object-fit: cover;
+ }
+
+ .selection-text {
+    background-color: #9B9B9B33;
+ }
+
+ h4 {
+  color: #9B9B9B;
+ }
+
+ h5{
+    color: #4A90E2;
+ }
+
+ h6 {
+  font-size: 16px;
+ }
+
+ p {
+    font-size: 12px;
+    color: #9B9B9B;
+    margin-bottom: 0;
+ }
+
+ .mobile-number, .email-address {
+    display: none;
+ }
+
+ .modal-body .btn, .modal-content .btn {
+    min-width: 120px;
+ }
+
+ .modal-body {
+    color: #9B9B9B;
+ }
+
+@media (min-width: 768px) {
+    .navbar-brand img {
+    height: 39px;
+    }
+
+    .image-height {
+        height: 100px;
+        width: 100px;
+    }
+.button-icon {
+    display: none;
+    }
+  .text-button{
+  display: block;}
+}

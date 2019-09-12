@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+
+
+    <link href="style.css" rel="stylesheet">
+
+
+    <title>Contact Savvy</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md  navbar-dark grad justify-content-center justify-content-md-start" id="">
+    <a class="navbar-brand" href="#">
+        <img alt="Contact Savvy" class="" height="39" src="Assets/ic-logo.png"
+        ></a>
+</nav>
+
+<div class="container my-3">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h4 class="float-left">My Contacts</h4>
+            <button class="btn float-right button-icon" data-target="#AddContact" data-toggle="modal"
+                    type="button">
+                <i class="fas fa-plus plus-icon"></i>
+            </button>
+        </div>
+        <div class="col-12 col-md-6">
+            <button class="btn btn-outline-primary float-right text-button" data-target="#AddContact"
+                    data-toggle="modal"
+                    type="button">Add Contact
+            </button>
+            <input id="Mobile_check" onclick="displayItems()" type="checkbox"> Mobile number
+            <input id="Email_address" onclick="displayItems()" type="checkbox"> Email
+        </div>
+    </div>
+
+    <div class="selection-text">B</div>
+    <div class="row align-items-center flex-nowrap">
+        <div class="col-auto"><img alt=""
+                                   class="rounded-circle  my-3  image-height"
+                                   src="Assets/user5.jpg">
+        </div>
+        <div class="col">
+            <h6>Ben Nevis</h6>
+            <p class="mobile-number">+27 82 299 5656</p>
+            <p class="email-address">ben@fourways.com</p>
+        </div>
+        <div class="col-auto pr-4">
+            <a data-target="#DeleteContact" data-toggle="modal" href="">
+                <i class="fas fa-trash-alt trash-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row align-items-center flex-nowrap">
+        <div class="col-auto"><img alt=""
+                                   class="rounded-circle  my-3 image-height"
+                                   src="Assets/user2.jpg">
+        </div>
+        <div class="col">
+            <h6>Brian Clayton</h6>
+            <p class="mobile-number">+27 82 299 5656</p>
+            <p class="email-address">brian@gmail.com</p>
+        </div>
+        <div class="col-auto pr-4">
+            <a data-target="#DeleteContact" data-toggle="modal" href="">
+                <i class="fas fa-trash-alt trash-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row align-items-center flex-nowrap">
+        <div class="col-auto"><img alt="Contact Savvy"
+                                   class="rounded-circle  my-3 image-height"
+                                   src="Assets/user3.jpg">
+        </div>
+        <div class="col">
+            <h6>Britney Klerk</h6>
+            <p class="mobile-number">+27 82 299 5656</p>
+            <p class="email-address">brit@yahoo.com</p>
+        </div>
+        <div class="col-auto pr-4">
+            <a data-target="#DeleteContact" data-toggle="modal" href="">
+                <i class="fas fa-trash-alt trash-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="selection-text">C</div>
+    <div class="row align-items-center flex-nowrap">
+        <div class="col-auto"><img alt="Contact Savvy"
+                                   class="rounded-circle  my-3 image-height"
+                                   src="Assets/user1.jpg">
+        </div>
+        <div class="col">
+            <h6>Casandra Harris</h6>
+            <p class="mobile-number">+27 82 864 2546</p>
+            <p class="email-address">charris@gmail.com</p>
+        </div>
+        <div class="col-auto pr-4">
+            <a data-target="#DeleteContact" data-toggle="modal" href=""
+               type="button">
+                <i class="fas fa-trash-alt trash-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row align-items-center flex-nowrap">
+        <div class="col-auto"><img alt="Contact Savvy"
+                                   class="rounded-circle  my-3 image-height"
+                                   src="Assets/user4.jpg"
+        ></div>
+        <div class="col">
+            <h6>Caitlyn Bowens</h6>
+            <p class="mobile-number">+27 74 334 5879</p>
+            <p class="email-address">caitboe@hotmail.co.za</p>
+        </div>
+        <div class="col-auto pr-4">
+            <a data-target="#DeleteContact" data-toggle="modal" href=""
+               type="button">
+                <i class="fas fa-trash-alt trash-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Add Contact -->
+    <div aria-hidden="true" aria-labelledby="exampleModalLongTitle" class="modal fade" id="AddContact"
+         role="dialog"
+         tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Contact</h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <img alt="Contact Savvy" class="rounded-circle  my-3 mx-auto" height="65"
+                                 src="Assets/profile-placeholder.png"
+                                 width="70">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Name" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Surname" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Mobile number" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Email address" type="email">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Address" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-outline-secondary" data-dismiss="modal" type="button">Cancel</button>
+                            <button class="btn btn-outline-primary ml-3" type="button">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal delete contact -->
+    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="DeleteContact" role="dialog"
+         tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete Contact</h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form class="my-3">
+                    <div class="modal-body text-center">
+                        Are you sure you want to delete this contact?
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-outline-secondary" data-dismiss="modal" type="button">Cancel</button>
+                        <button class="btn btn-outline-primary ml-3" type="button">Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
